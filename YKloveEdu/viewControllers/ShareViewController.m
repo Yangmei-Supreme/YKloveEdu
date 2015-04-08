@@ -6,7 +6,6 @@
 //  Copyright (c) 2015年 yangmei. All rights reserved.
 //
 
-//test
 
 #import "ShareViewController.h"
 
