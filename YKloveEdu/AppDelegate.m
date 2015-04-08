@@ -8,6 +8,14 @@
 
 #import "AppDelegate.h"
 
+#import "RootViewController.h"
+#import "MainTabBarViewController.h"
+#import "RemoterViewController.h"
+#import "SaleViewController.h"
+#import "StudyViewController.h"
+#import "ShareViewController.h"
+#import "MeViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +24,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = [[MainTabBarViewController alloc]init];
+    
+    [application setStatusBarHidden:NO];
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

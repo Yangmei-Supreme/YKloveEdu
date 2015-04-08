@@ -1,0 +1,14 @@
+#ifndef YKloveEdu_PrefixHeader_pch
+#define YKloveEdu_PrefixHeader_pch
+
+#import "Header.h"
+
+#ifdef DEBUG
+#define YMLog(...) NSLog(__VA_ARGS__)
+#else
+#define YMLog(...)
+#endif
+
+
+
+#endif

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="iye-ix-mbw" customClass="CourseView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="nN0-bb-jKb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5A-1U-ZdQ" userLabel="line">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.86286695079999998" green="0.86286695079999998" blue="0.86286695079999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="g0d-Os-94E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P5A-1U-ZdQ" firstAttribute="leading" secondItem="iye-ix-mbw" secondAttribute="leading" id="5No-Nm-vtl"/>
+                <constraint firstItem="nN0-bb-jKb" firstAttribute="leading" secondItem="iye-ix-mbw" secondAttribute="leading" id="HrB-Yh-okd"/>
+                <constraint firstAttribute="centerX" secondItem="nN0-bb-jKb" secondAttribute="centerX" id="R83-fS-Mf3"/>
+                <constraint firstAttribute="trailing" secondItem="nN0-bb-jKb" secondAttribute="trailing" id="feO-XV-W0E"/>
+                <constraint firstAttribute="centerY" secondItem="nN0-bb-jKb" secondAttribute="centerY" id="gPf-uQ-WCq"/>
+                <constraint firstItem="P5A-1U-ZdQ" firstAttribute="top" secondItem="iye-ix-mbw" secondAttribute="top" id="gj8-T4-Z0v"/>
+                <constraint firstAttribute="bottom" secondItem="nN0-bb-jKb" secondAttribute="bottom" id="iPb-P5-dLt"/>
+                <constraint firstItem="nN0-bb-jKb" firstAttribute="top" secondItem="iye-ix-mbw" secondAttribute="top" id="pRy-rQ-LTh"/>
+                <constraint firstAttribute="trailing" secondItem="P5A-1U-ZdQ" secondAttribute="trailing" id="qYT-TM-1wL"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="tableView" destination="nN0-bb-jKb" id="s7R-8c-DoT"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="154"/>
+        </scrollView>
+    </objects>
+</document>
